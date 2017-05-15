@@ -1,0 +1,339 @@
+/**
+ * General
+ */
+body {
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #75ca20;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f66425;
+    text-decoration: none;
+
+    -webkit-transition: color 350ms ease;
+       -moz-transition: color 350ms ease;
+            transition: color 350ms ease;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/**
+ * Header
+ */
+header {
+    background-color: #00a7e4;
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* Logo */
+header h1.logo {
+    background: url('../demo/logo.png') no-repeat center left;
+    height: 60px;
+    margin: 0;
+    overflow: hidden;
+    text-indent: -9999999px;
+}
+
+/* Header Title */
+header h2 {
+    font-size: 2.1em;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+/* Header Social */
+header .social {
+    text-align: right;
+}
+
+header .social a {
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px 15px 10px 0;
+    background: #94d822;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    color: white;
+}
+
+header .social a:hover {
+    background: #f66425;
+}
+
+/* Countdown */
+header ul#countdown {
+    list-style: none;
+    margin: 50px 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+header ul#countdown li {
+    display: inline-block;
+}
+
+header ul#countdown li span {
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 600;
+}
+
+header ul#countdown li.seperator {
+    font-size: 3em;
+    line-height: .9;
+    vertical-align: top;
+}
+
+@media (min-width: 768px) {
+    header ul#countdown li span,
+    header ul#countdown li.seperator {
+        font-size: 7em;
+    }
+}
+
+@media (min-width: 992px) { 
+    header ul#countdown li span,
+    header ul#countdown li.seperator {
+        font-size: 8em;
+    }
+}
+
+header ul#countdown li p {
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+/* Subscription */
+.subscribe {
+    padding: 30px 0 0;
+}
+
+.subscribe input,
+.subscribe button {
+    width: 100%;
+    padding: 10px 19px;
+    border: 2px solid #00b2f5;
+    font-size: 1.1em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.subscribe input::-webkit-input-placeholder {
+    color: #2ebbea;
+}
+
+.subscribe button {
+    background: #00b2f5;
+    color: #FFF;
+}
+
+.subscribe button:hover {
+    opacity: .7;
+}
+
+.subscribe .error_alert,
+.subscribe .success_alert {
+    display: none;
+}
+
+/**
+ * Section
+ */
+section {
+    color: #606060;
+    padding: 120px 0;
+    text-align: center;
+}
+
+/* Section Gray */
+section.gray {
+    color: #999999;
+    background: #f1f1f1;
+}
+
+/* Section header */
+section h2,
+section h3 {
+    color: #3c3c3c;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section.gray h2,
+section.gray h3 {
+    color: #666;
+}
+
+/* Section Feature Items */
+section .feature-items .feature-item {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+section .feature-items .feature-item:last-child {
+    margin-bottom: 0;
+}
+
+section .feature-items .feature-item .feature-icon {
+    text-align: center;
+}
+
+section .feature-items .feature-item i {
+    color: #75ca20;
+    font-size: 10em;
+    position: relative;
+}
+
+section .feature-items .feature-item i:after {
+    content: " ";
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0px;
+    border-radius: 100%;
+    background: #e0e0e0;
+}
+
+/* Section Team Members */
+section .team-members .team-member img {
+    border: 10px solid #2ebbea;
+    border-radius: 100%;
+}
+
+section .team-members .team-member i {
+    font-size: .8em;
+    margin: 0 5px;
+}
+
+/* Section Twitter Feed */
+section .twitter .tweet {
+    overflow: hidden;
+}
+
+section .twitter ul {
+    width: 99999px;
+    height: 100px;
+}
+
+section .twitter ul li {
+    text-align: left;
+    width: 300px;
+    height: 100px;
+    float: left;
+    border-right: 1px solid #eee;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+}
+
+.quote-author:before {
+    content: "— ";
+}
+
+.quote-author:after {
+    content: " —";
+}
+
+/**
+ * Footer
+ */
+footer {
+    font-size: 1.1em;
+    line-height: 2em;
+    background: #3C485F;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    line-height: 1;
+    padding: 0 15px;
+    border-right: 1px solid #94d822;
+    display: inline-block;
+}
+
+footer a:last-child {
+    border-right: 0px;
+}
+
+/**
+ * Animations
+ */
+.fadein {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+
+.fadein.animate {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+
+    -webkit-transition: all 350ms ease;
+       -moz-transition: all 350ms ease;
+         -o-transition: all 350ms ease;
+            transition: all 350ms ease;
+}
+
+.fadein-move-up {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+         -o-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+.fadein-move-up.animate {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+
+    -webkit-transform: translateY(0%);
+       -moz-transform: translateY(0%);
+         -o-transform: translateY(0%);
+            transform: translateY(0%);
+
+    -webkit-transition: all 350ms ease;
+       -moz-transition: all 350ms ease;
+         -o-transition: all 350ms ease;
+            transition: all 350ms ease;
+}
